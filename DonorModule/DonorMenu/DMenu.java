@@ -75,7 +75,7 @@ public class DMenu
             String DName = info2[0].trim();
             if (DName.equals(temp1)) {
                 Scanner sc = new Scanner(System.in);
-                System.out.println("\n-----\033[31m Update Details\033[0m -----");
+                System.out.println("\n----- Update Details -----");
                 System.out.println("1. Phone Number");
                 System.out.println("2. Address");
                 System.out.println("3. Go Back");
@@ -145,9 +145,7 @@ public class DMenu
             if (HName.equals(Check_User)) {
                 hasDonationHistory = true;
                 String LastDonationDate = A[1].trim();
-                String[] parts = LastDonationDate.split("-");
-                String LastDonationDate1 = new String(parts[2]+"-"+parts[1]+"-"+parts[0]);
-                System.out.println("Last Donation Date : " + LastDonationDate1);
+                System.out.println("Last Donation Date : " + LastDonationDate);
                 LocalDate currentDate = LocalDate.now();
                 LocalDate date1 = LocalDate.parse(LastDonationDate);
                 LocalDate date2 = currentDate;
@@ -157,9 +155,8 @@ public class DMenu
                     System.out.println("Are you ready to Donate Blood? (Y/N)");
                     Scanner in = new Scanner(System.in);
                     char chc = in.next().charAt(0);
-                    if (chc == 'Y'|| chc == 'y') {
-                        System.out.println("Enter the Donation Date in Format (DD-MM-YYYY)");
-                        
+                    if (chc == 'Y') {
+                        System.out.println("Enter the Donation Date in Format (YYYY-MM-DD)");
                         String UpdatedDate = in.next();
                         HistoryList.set(i, HName + "," + UpdatedDate);
                         FileWriter writer = new FileWriter(filePath);
@@ -207,7 +204,7 @@ public class DMenu
    {
      String ID =id;
      System.out.println("\n\t\t\t**********************************************");
-     System.out.println("\t\t\t****\033[31m       Welcome To Donor Module\033[0m        ****");
+     System.out.println("\t\t\t****       Welcome To Donor Module        ****");
      System.out.println("\t\t\t**********************************************");
      System.out.println("1. View Details ");
      System.out.println("2. Update Details");
