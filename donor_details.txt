@@ -1,0 +1,7 @@
+Naresh,male,10,9640602748,A+,guntur,ap,Public,Medikonduru,522438
+Narasimha Rao,Male,20,9640602748,B-,Guntur,Ap,Private,SRM AP,522503
+Sivamani,  Male,  19, 123456789,  B+,  Vizag,  AP,  Public,  Beach Road,  522456
+Sahithya ,Female,19,235677,O+,Eluru,AP,Private,Velagalapalli,522341
+Sim,   Male,   20, 7013156189,   A+,   Guntur,   AP,   Private,   NerruKonda,   522502
+Prasanna Kumar,Male,20,23456357556,AB+,Guduru,AP,Private,Guduru,533123
+Narasimha Rao,M,17,94535454654,B+,GNT,AP,Pubkic,medikonduru,522438
